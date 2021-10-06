@@ -115,12 +115,12 @@ class _SpeedDialState extends State<SpeedDial>
           Padding(
             padding: const EdgeInsets.only(right: 4),
             child: SingleChildScrollView(
-              reverse: true,
               child: ConstrainedBox(
                 constraints: BoxConstraints(maxHeight: MediaQuery.of(context).size.height * .75),
                 child: ListView(
+                  reverse:true,
                   children: widget.speedDialChildren
-                          ?.map<Widget>((SpeedDialChild speedDialChild) {
+                          ?.reversed.map<Widget>((SpeedDialChild speedDialChild) {
                         final Widget speedDialChildWidget = Opacity(
                           opacity: _speedDialChildAnimations[
                                   speedDialChildAnimationIndex]
