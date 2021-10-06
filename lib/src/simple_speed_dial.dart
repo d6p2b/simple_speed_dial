@@ -116,7 +116,7 @@ class _SpeedDialState extends State<SpeedDial>
             padding: const EdgeInsets.only(right: 4),
             child: SingleChildScrollView(
               child: ConstrainedBox(
-                constraints: BoxConstraints(maxHeight: MediaQuery.of(context).size.height * .75),
+                constraints: BoxConstraints(maxHeight: MediaQuery.of(context).size.height * .65),
                 child: ListView(
                   reverse:true,
                   children: widget.speedDialChildren
